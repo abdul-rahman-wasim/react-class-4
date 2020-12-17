@@ -10,7 +10,7 @@ function App() {
   return (
     <div className={` ${isMorning ? 'colorCheck':'box' }`} >
 
-    <h2>Color of the day is {isMorning ? 'Morning':'Night'} </h2>
+    <h2>Time of Day is  {isMorning ? 'Morning':'Night'} </h2>
       
   <Count countValue={count} />
   <br/>

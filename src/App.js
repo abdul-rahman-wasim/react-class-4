@@ -5,10 +5,10 @@ import './App.css';
 function App() {
   
   let [count, setCount]=useState(0);
-  let[isMorning,setMorning]=useState(true)
+  let[isMorning,setMorning]=useState(true);
   
   return (
-    <div className={` ${isMorning ? 'colorCheck':'box' }`} >
+    <div style={ {backgroundColor:isMorning ? 'gold':'limegreen' } } >
 
     <h2>Time of Day is  {isMorning ? 'Morning':'Night'} </h2>
       

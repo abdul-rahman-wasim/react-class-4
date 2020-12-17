@@ -32,7 +32,12 @@ jobs:
         uses: Borales/actions-yarn@v2.3.0
         with:
             cmd: install
+      
+      - name: Making Build
+        run: yarn build
+      
       - name: Install Surge
         run: npm install -g surge
+      
       - name: Deploy Website
         run: surge ./build bootcamp2020-react-hooks-sample1.surge.sh --token ${{secrets.SURGE_TOKEN}}
